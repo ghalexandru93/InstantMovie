@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_overview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dist_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:drawablePadding="@dimen/dist_icon"
+                    android:drawableStart="@drawable/ic_description_black_24dp"
+                    android:gravity="center"
+                    android:text="OVERVIEW"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <com.ghalexandru.instant_movie.views.ExpandTextView
+                    android:id="@+id/tv_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dist_small"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    tools:text="A live-action adaptation of Disney\'s version of the classic \'Beauty and the Beast\' tale of a cursed prince and a beautiful young woman who helps him break the spell." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dist_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_stars_black_24dp"
+                    android:drawablePadding="@dimen/dist_icon"
+                    android:drawableStart="@drawable/ic_stars_black_24dp"
+                    android:gravity="center"
+                    android:text="RATING"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dist_small"
+                        android:text="7.3"
+                        android:textSize="@dimen/text_large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_rating"
+                        android:layout_toRightOf="@id/tv_rating"
+                        android:text="/10" />
+
+                    <TextView
+                        android:id="@+id/tv_vote_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_ten"
+                        android:layout_toRightOf="@id/tv_ten"
+                        android:text="(1562 votes)" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dist_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_local_offer_black_24dp"
+                    android:drawablePadding="@dimen/dist_icon"
+                    android:drawableStart="@drawable/ic_local_offer_black_24dp"
+                    android:gravity="center"
+                    android:text="GENRES"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <com.ghalexandru.instant_movie.views.ExpandTextView
+                    android:id="@+id/tv_genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dist_small"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Action, Adventure, Fantasy, Science Fiction" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dist_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_info_black_24dp"
+                    android:drawablePadding="@dimen/dist_icon"
+                    android:drawableStart="@drawable/ic_info_black_24dp"
+                    android:gravity="center"
+                    android:text="STATUS"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <com.ghalexandru.instant_movie.views.ExpandTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dist_small"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Post Production" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.v4.widget.NestedScrollView>

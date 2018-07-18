@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Distance -->
+    <dimen name="dist_extra_large">25dp</dimen>
+    <dimen name="dist_large">20dp</dimen>
+    <dimen name="dist_medium">10dp</dimen>
+    <dimen name="dist_small">5dp</dimen>
+    <dimen name="dist_icon">3dp</dimen>
+
+
+    <!-- General Text Sizes -->
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <!-- Views size -->
+    <dimen name="movie_grid_size">120dp</dimen>
+    <dimen name="movie_list_size">360dp</dimen>
+
+    <dimen name="tab_layout_height">40dp</dimen>
+
+    <dimen name="list_poster_width">92dp</dimen>
+    <dimen name="list_poster_height">136dp</dimen>
+
+    <dimen name="grid_poster_width">115dp</dimen>
+    <dimen name="grid_poster_height">169dp</dimen>
+
+
+    <dimen name="linear_space_decoration">1dp</dimen>
+    <dimen name="grid_space_decoration">-1dp</dimen>
+    <dimen name="recycle_view_padding">5dp</dimen>
+
+    <dimen name="backdrop_height">225dp</dimen>
+
+
+    <item name="grid_space_decoration_ratio" type="dimen" format="float" >1.0</item>
+    <item name="grid_recycler_padding_ration" type="dimen" format="float">1.0</item>
+
+</resources>

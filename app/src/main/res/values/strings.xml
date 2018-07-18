@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="movies_name">Movies</string>
+    <string name="shows_name">Tv Shows</string>
+
+    <string name="app_name">Instant Movie</string>
+
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+    <string name="api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+
+    <string name="persons_name">Popular People</string>
+    <string name="details">DETAILS</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="discover_movies">Discover Movies</string>
+    <string name="popular">POPULAR</string>
+    <string name="top_rated">TOP RATED</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="on_tv">ON TV</string>
+    <string name="airing_today">AIRING TODAY</string>
+    <string name="custom_list">Custom List</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="favorites">Favorites</string>
+    <string name="not_implemented">Not implemented yet!</string>
+
+</resources>

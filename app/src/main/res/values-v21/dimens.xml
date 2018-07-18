@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="grid_space_decoration_ratio" type="dimen" format="float" >3.0</item>
+    <item name="grid_recycler_padding_ration" type="dimen" format="float">1.4</item>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dist_medium">
+
+    <Button
+        android:id="@+id/btn_sort_asc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_sort_ascending" />
+
+    <Button
+        android:id="@+id/btn_sort_des"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/dist_medium"
+        android:layout_toLeftOf="@id/btn_sort_asc"
+        android:background="@drawable/ic_sort_descending" />
+
+    <Button
+        android:id="@+id/btn_filter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/dist_medium"
+        android:layout_toLeftOf="@id/btn_sort_des"
+        android:background="@drawable/ic_filter_list" />
+
+
+</RelativeLayout>

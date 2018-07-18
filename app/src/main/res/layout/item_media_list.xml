@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_poster_height"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="@dimen/list_poster_width"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@color/primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dist_medium"
+            android:layout_marginRight="@dimen/dist_medium"
+            android:layout_toEndOf="@id/iv_poster"
+            android:layout_toRightOf="@id/iv_poster"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                tools:text="Beauty and the Beast" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendar_clock"
+                    android:drawablePadding="3dp"
+                    android:drawableStart="@drawable/ic_calendar_clock"
+                    android:gravity="center"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"
+                    tools:text="2017" />
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:drawableLeft="@drawable/tmdb"
+                    android:drawablePadding="3dp"
+                    android:drawableStart="@drawable/tmdb"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    tools:text="6.8" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="italic"
+                tools:text="Action, Adventure, Comedy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dist_medium"
+                    android:src="@drawable/ic_bookmark_plus_outline_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dist_medium"
+                    android:src="@drawable/ic_eye_off_outline_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

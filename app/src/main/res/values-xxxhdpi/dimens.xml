@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+//  70%
+    <dimen name="list_poster_width">95dp</dimen>
+    <dimen name="list_poster_height">140dp</dimen>
+
+    <!--<dimen name="grid_poster_height">200dp</dimen>-->
+    <dimen name="grid_poster_height">200dp</dimen>
+
+    <dimen name="grid_space_decoration">2dp</dimen>
+    <dimen name="recycle_view_padding">6dp</dimen>
+
+
+
+</resources>

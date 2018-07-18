@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dist_medium">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="#505050" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:layout_marginLeft="@dimen/dist_medium"
+            android:layout_marginStart="@dimen/dist_medium"
+            android:layout_toEndOf="@id/iv_person"
+            android:layout_toRightOf="@id/iv_person"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                tools:text="Vin Diesel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
